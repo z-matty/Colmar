@@ -1,0 +1,239 @@
+/* General page style */
+
+html{
+    font-size: 16px;
+    font-family: Georgia, Times, 'Times New Roman', serif
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+a{
+    color: black;
+}
+
+/* Top navigation bar */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+}
+.logo{
+    margin-left: 1.5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+}
+.navigation p{
+    padding-left: 1rem;
+}
+header .icons{
+    display: none;
+}
+.black{
+    font-weight: 700;
+    color: black;
+}
+.grey{
+    font-weight: 700;
+    color: grey;
+}
+
+/* Above the fold content */
+
+.atf{
+    margin-top: 4rem;
+    background-color: rgb(221, 220, 220);
+    display: flex;
+    justify-content: space-between;
+}
+
+.atf img{
+    margin: 2rem 1.5rem;
+    width: 60%;
+}
+
+.text{
+    width: 20%;
+    margin: auto;
+}
+.cta{
+    padding: 0.5rem;
+    background-color: green;
+    text-align: center;
+    font-weight: 800;
+}
+.cta a{
+    color: honeydew;
+}
+.atf h1{
+    font-size: 2.5rem;
+}
+.atf h2{
+    font-weight: 300;
+}
+
+/* Section with campus informations */
+.details{
+    display: flex;
+    margin-top: 2rem;
+}
+.mobile{
+    display: none;
+}
+.quote{
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+.quote img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.quote h2{
+    font-size: 2rem;
+}
+.author{
+    font-weight: 700;
+}
+.campus{
+    width: 40%;
+}
+.object{
+    display: flex;
+    margin-top: 1rem;
+}
+.object img{
+    height:auto;
+    width: 35%;
+    margin: 1rem;
+}
+.object.dates{
+    width: 65%;
+}
+.object h3{
+    font-size: 1.5rem;
+}
+.dates{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dates p{
+    padding: 8px 0;
+}
+#guest{
+    background-color: rgb(221, 220, 220);
+    margin-bottom: 2rem;
+}
+
+/* Courses section */
+
+.learning{
+    background-color: rgb(221, 220, 220);
+}
+.learning h2{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+.faculty{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 2.5rem 2rem 2.5rem;
+    justify-content: center;
+}
+.courses{
+    margin: 2rem;
+    background-color: rgb(255, 255, 255);
+    min-width: 16rem;
+    max-width: 20rem;
+}
+.courses img{
+    height: auto;
+    max-width: 100%;
+}
+.courses h3{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.courses p{
+    padding: 0.5rem 0rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+/* Thesis exhibits section */
+
+.thesis{
+    display: flex;
+}
+.video{
+    width: 60%;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+    z-index: -1;
+}
+video{
+    max-width: 100%;
+    max-height: 100%;
+}
+.video h3{
+    font-size: 1.8rem;
+}
+.studies{
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+    width: 40%;
+}
+.studies img{
+    padding: 1rem;
+    height: auto;
+    width: 35%
+}
+.studies .box{
+    display: flex;
+}
+.box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box h3{
+    font-size: 1.5rem;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 0.1rem solid rgb(95, 95, 95)
+}
+footer p{
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+}
+footer a{
+    padding: 0rem 0.5rem;
+    font-size: 0.8rem;
+}
