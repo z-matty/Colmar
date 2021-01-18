@@ -19,6 +19,14 @@ a:hover {
 a{
     color: black;
 }
+@media only screen and (max-width: 480px){
+    .body{
+        width: 100%;
+    }
+    a{
+        color: blue;
+    }
+}
 
 /* Top navigation bar */
 
@@ -78,6 +86,11 @@ header .icons{
    header{
        display: flex;
        justify-content: space-around;
+       margin: 0;
+       padding: 0;
+   }
+   .logo{
+       margin-left: 0;
    }
 }
 
@@ -121,8 +134,19 @@ header .icons{
     .atf{
         display: block;
         padding: 0rem;
-        min-width: 100%;
-        margin-top: 4rem;
+        width: 100%;
+    }
+    .atf img{
+        margin: 0;
+        width: 100%;
+    }
+    .text{
+        margin: 2rem 1rem;
+        width: auto;
+        padding-bottom: 2rem;
+    }
+    .cta{
+        margin-top: 1.5rem;
     }
 }
 /* Section with campus informations */
@@ -186,17 +210,34 @@ header .icons{
         display: none;
     }
     .campus{
-        display: block;
+        display: inline;
+        width: 100%;
     }
     .object{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
     }
     .object img{
         display: none;
     }
     .object .mobile{
-        display: block;
-        width: auto;
+        display: flex;
+        width: 100%;
+    }
+    .dates{
+        align-self: flex-start;
+    }
+    .dates h3{
+        margin: 0;
+    }
+    .dates p{
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+    #guest{
+        background-color: white;
     }
 }
 
@@ -238,8 +279,36 @@ header .icons{
     margin-left: 1rem;
 }
 
+/* Courses section - mobile version */
+@media only screen and (max-width: 480px){
+    .learning{
+        background-color: white;
+    }
+    .learning h2{
+        padding: 1rem 0 0 0;
+        font-size: 2rem;
+        margin-top: 0;
+        border-top: 2px solid grey;
+    }
+    .courses img{
+        display:none;
+    }
+    .courses p{
+        display: none;
+    }
+    .courses{
+        background-color: rgb(221, 220, 220);
+        margin: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
 /* Thesis exhibits section */
 
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
 .thesis{
     display: flex;
 }
@@ -274,6 +343,31 @@ video{
 .box h3{
     font-size: 1.5rem;
 }
+
+/* Thesis exhibits section - mobile version */
+@media only screen and (max-width: 480px){
+    h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+        border-top: 2px solid grey;
+    }
+    .studies{
+        display: none;
+    }
+    .video p{
+        display: none;
+    }
+    .video h3{
+        display: none;
+    }
+    .video{
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}
+
 /* Footer */
 footer{
     display: flex;
