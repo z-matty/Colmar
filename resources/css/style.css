@@ -2,7 +2,8 @@
 
 html{
     font-size: 16px;
-    font-family: Georgia, Times, 'Times New Roman', serif
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
 }
 a:link {
     text-decoration: none;
@@ -59,6 +60,26 @@ header .icons{
     font-weight: 700;
     color: grey;
 }
+/* Top navigation bar - mobile version */
+
+@media only screen and (max-width: 480px){
+   header .icons{
+       display: inline;
+   } 
+   .black{
+       display: none;
+   }
+   .grey{
+       display: none;
+   }
+   .navigation{
+       display:none;
+   }
+   header{
+       display: flex;
+       justify-content: space-around;
+   }
+}
 
 /* Above the fold content */
 
@@ -94,6 +115,16 @@ header .icons{
     font-weight: 300;
 }
 
+/* Above the fold content - mobile version  */
+
+@media only screen and (max-width: 480px){
+    .atf{
+        display: block;
+        padding: 0rem;
+        min-width: 100%;
+        margin-top: 4rem;
+    }
+}
 /* Section with campus informations */
 .details{
     display: flex;
@@ -147,6 +178,28 @@ header .icons{
     background-color: rgb(221, 220, 220);
     margin-bottom: 2rem;
 }
+
+/* Section with campus informations - mobile version */
+
+@media only screen and (max-width: 480px){
+    .quote{
+        display: none;
+    }
+    .campus{
+        display: block;
+    }
+    .object{
+        display: block;
+    }
+    .object img{
+        display: none;
+    }
+    .object .mobile{
+        display: block;
+        width: auto;
+    }
+}
+
 
 /* Courses section */
 
